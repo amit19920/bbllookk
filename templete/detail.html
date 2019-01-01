@@ -1,0 +1,25 @@
+
+{% block content %}
+ {% for i in items %} 
+    <p><ul><h1><button id="myBtn">{{i.title }}</button>
+
+
+<div id="myModal" class="modal">
+
+
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2>{{i.title }}</h2>
+  </div>
+  <div class="modal-body">
+    <p>{{i.description}}}</p>
+  </div>
+  <div class="modal-footer">
+    <h3>Published on: {{i.time_now}}</h3>
+  </div>
+</div>
+</h1>  </p></ul>
+    
+    {% endfor %}
+{% endblock %}
